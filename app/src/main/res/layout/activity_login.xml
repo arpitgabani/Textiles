@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="331dp"
+        android:background="@drawable/shape_1"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/helloTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="5dp"
+            android:text="Hello, New Bee!"
+            android:textColor="#212E53"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/accountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/helloTV"
+            android:layout_marginLeft="100dp"
+            android:text="Don't have an account yet?"
+            android:textColor="#212E53" />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape2"
+            android:minWidth="120dp"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/orTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpBtn"
+            android:textSize="20sp"
+            android:text="or"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#212E53" />
+
+        <Button
+            android:id="@+id/viewCatBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape2"
+            android:minWidth="120dp"
+            android:text="View Catalouge"
+            android:textColor="#FFFFFF" />
+
+
+
+           <TextView
+            android:id="@+id/view1Ret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewCatBtn"
+            android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+            android:text="View our retail catalouge without log in to  "
+            android:textColor="#212E53" />
+
+        <TextView
+            android:id="@+id/view2Ret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1Ret"
+            android:layout_centerHorizontal="true"
+            android:text=" the application! "
+            android:textColor="#212E53" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="">
+
+        <TextView
+            android:id="@+id/signInTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sign In"
+            android:textColor="#212E53"
+            android:layout_centerHorizontal="true"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+        
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="4C4C4C"
+            android:layout_below="@id/signInTV"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/shape3"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="4C4C4C"
+            android:layout_below="@id/emailET"
+            android:inputType="textPassword"
+            android:background="@drawable/shape3"
+            android:padding="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:id="@+id/forgotpassTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordET"
+            android:text="Forgot Password?"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/signBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgotpassTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:background="#BED3C3"
+            android:minWidth="120dp"
+            android:text="Sign In"
+            android:textColor="#212E53"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/or2TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signBtn"
+            android:textSize="20sp"
+            android:text="or"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#212E53" />
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/or2TV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape4"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/googleIB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:background="@null"
+                android:paddingTop="4dp"
+                android:src="@drawable/google" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/googleIB"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:text="Continue with Google"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
