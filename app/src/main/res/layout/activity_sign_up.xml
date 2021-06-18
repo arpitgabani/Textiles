@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="530dp"
+            tools:context=".SignUpActivity">
+
+
+            <RelativeLayout
+                android:id="@+id/scrollable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/signUpTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textStyle="bold"
+                    android:textColor="#212E53"
+                    android:textSize="30sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="800dp"
+                    android:layout_marginRight="800dp"/>
+
+                <TextView
+                    android:id="@+id/personalTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/signUpTV"
+                    android:text="Personal Details"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/firstNameET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/personalTV"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="56dp" />
+
+                <EditText
+                    android:id="@+id/lastNameET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/firstNameET"
+                    android:layout_below="@id/personalTV"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="60dp"
+                    android:layout_marginRight="25dp"/>
+
+                <EditText
+                    android:id="@+id/email2ET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firstNameET"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="285dp"/>
+
+                <EditText
+                    android:id="@+id/mobileET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email2ET"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="216dp"/>
+
+                <EditText
+                    android:id="@+id/dateOfBirthET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mobileET"
+                    android:hint="Date Of Birth"
+                    android:inputType="date"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="44dp" />
+
+                <EditText
+                    android:id="@+id/dateOfAnniversary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/dateOfBirthET"
+                    android:layout_below="@id/mobileET"
+                    android:hint="Date Of Anniversary"
+                    android:inputType="text"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:layout_marginRight="216dp"/>
+
+
+                <TextView
+                    android:id="@+id/businessTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dateOfBirthET"
+                    android:text="Business Details"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <EditText
+                    android:id="@+id/firstName2ET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/businessTV"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="56dp" />
+
+                <EditText
+                    android:id="@+id/gstNumberET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/firstName2ET"
+                    android:layout_below="@id/businessTV"
+                    android:hint="GST Number"
+                    android:inputType="text"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="60dp"
+                    android:layout_marginRight="5dp"/>
+
+                <EditText
+                    android:id="@+id/panNumberET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firstName2ET"
+                    android:hint="PAN Number"
+                    android:inputType="text"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="236dp"/>
+
+                <EditText
+                    android:id="@+id/address1ET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/panNumberET"
+                    android:hint="Addressline 1"
+                    android:inputType="text"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="233dp"/>
+
+                <EditText
+                    android:id="@+id/address2ET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address1ET"
+                    android:hint="Addressline 2"
+                    android:inputType="text"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="233dp"/>
+
+                <EditText
+                    android:id="@+id/password2ET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address2ET"
+                    android:hint="Password"
+                    android:inputType="text"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="66dp" />
+
+                <EditText
+                    android:id="@+id/confirmPasswordET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/password2ET"
+                    android:layout_below="@id/address2ET"
+                    android:hint="Confirm Password"
+                    android:inputType="text"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="22dp"
+                    android:layout_marginRight="5dp"/>
+
+
+                <Button
+                    android:id="@+id/signUp2Btn"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password2ET"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="21dp"
+                    android:background="#BED3C3"
+                    android:minWidth="120dp"
+                    android:text="Sign Up"
+                    android:textColor="#212E53"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/or3TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/signUp2Btn"
+                    android:textSize="20sp"
+                    android:text="or"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#212E53" />
+
+
+                <RelativeLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/or3TV"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape4"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageButton
+                        android:id="@+id/google2IB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:background="@null"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/google" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/google2IB"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Continue with Google"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape5">
+
+            <TextView
+                android:id="@+id/welcomeBkTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back !"
+                android:textStyle="bold"
+                android:textColor="#212E53"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/alreadyHaveAccountTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already Have An Account ?"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/welcomeBkTV"
+                />
+            <Button
+                android:id="@+id/signIn2Btn"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape2"
+                android:minWidth="120dp"
+                android:text="Sign In"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/alreadyHaveAccountTV" />
+
+
+        </RelativeLayout>
+
+
+
+
+</LinearLayout>

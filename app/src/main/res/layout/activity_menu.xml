@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="262dp"
+    android:layout_height="731dp"
+    tools:context=".MenuActivity">
+
+    <RelativeLayout
+        android:layout_width="262dp"
+        android:layout_height="731dp"
+        android:background="@drawable/shape7"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/closeTV"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingHorizontal="106dp"
+            android:background="#BED3C3"/>
+        <TextView
+            android:id="@+id/heyTV"
+            android:layout_below="@id/closeTV"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Hey, Arpit"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:paddingHorizontal="87dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/homeTV"
+            android:layout_below="@id/heyTV"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:textSize="20sp"
+            android:text="Home"
+            android:paddingLeft="25dp"/>
+        <TextView
+            android:id="@+id/ProfileTV"
+            android:layout_below="@id/homeTV"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:textSize="20sp"
+            android:text="Profile"
+            android:paddingLeft="25dp"/>
+        <TextView
+            android:id="@+id/orderDetailsTV"
+            android:layout_below="@id/ProfileTV"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:textSize="20sp"
+            android:text="Order Details"
+            android:paddingLeft="25dp"/>
+        <TextView
+            android:id="@+id/orderProcessingTV"
+            android:layout_below="@id/orderDetailsTV"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:textSize="20sp"
+            android:text="Order Processing"
+            android:paddingLeft="25dp"/>
+        <TextView
+            android:id="@+id/DeliveryTV"
+            android:layout_below="@id/orderProcessingTV"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:textSize="20sp"
+            android:text="Delivery"
+            android:paddingLeft="25dp"/>
+        <TextView
+            android:id="@+id/paymentsTV"
+            android:layout_below="@id/DeliveryTV"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:textSize="20sp"
+            android:text="Payments"
+            android:paddingLeft="25dp"/>
+        <TextView
+            android:id="@+id/paymentHistory"
+            android:layout_below="@id/paymentsTV"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:textSize="20sp"
+            android:text="Payment History"
+            android:paddingLeft="25dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

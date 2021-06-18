@@ -99,8 +99,7 @@
     <RelativeLayout
         android:layout_below="@id/toolbarRl"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/signInTV"
@@ -118,7 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:textColorHint="4C4C4C"
+            android:textColorHint="#4C4C4C"
             android:layout_below="@id/signInTV"
             android:inputType="textEmailAddress"
             android:background="@drawable/shape3"
@@ -132,7 +131,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:textColorHint="4C4C4C"
+            android:textColorHint="#4C4C4C"
             android:layout_below="@id/emailET"
             android:inputType="textPassword"
             android:background="@drawable/shape3"
@@ -152,7 +151,7 @@
             android:textColor="@color/black"/>
 
         <Button
-            android:id="@+id/signBtn"
+            android:id="@+id/signInBtn"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="357dp"
             android:layout_height="wrap_content"
@@ -169,7 +168,7 @@
             android:id="@+id/or2TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/signBtn"
+            android:layout_below="@id/signInBtn"
             android:textSize="20sp"
             android:text="or"
             android:layout_marginTop="5dp"
@@ -177,6 +176,7 @@
             android:textColor="#212E53" />
 
         <RelativeLayout
+            android:id="@+id/relativeg"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/or2TV"
