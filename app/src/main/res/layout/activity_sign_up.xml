@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUpActivity"
+    android:id="@+id/register"
     android:orientation="vertical">
 
 
@@ -45,7 +46,7 @@
 
                 <EditText
                     android:id="@+id/firstNameET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="162.5dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/personalTV"
                     android:hint="First Name"
@@ -57,12 +58,11 @@
                     android:layout_marginLeft="25dp"
                     android:paddingLeft="25dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingRight="56dp" />
+                    android:paddingBottom="10dp" />
 
                 <EditText
                     android:id="@+id/lastNameET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="162.5dp"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@id/firstNameET"
                     android:layout_below="@id/personalTV"
@@ -77,11 +77,11 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingRight="60dp"
-                    android:layout_marginRight="25dp"/>
+                    android:layout_toRightOf="@id/firstNameET" />
 
                 <EditText
                     android:id="@+id/email2ET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/firstNameET"
                     android:hint="Email"
@@ -93,12 +93,11 @@
                     android:layout_marginLeft="25dp"
                     android:paddingLeft="25dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingRight="285dp"/>
+                    android:paddingBottom="10dp"/>
 
                 <EditText
                     android:id="@+id/mobileET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/email2ET"
                     android:hint="Mobile Number"
@@ -110,12 +109,11 @@
                     android:layout_marginLeft="25dp"
                     android:paddingLeft="25dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingRight="216dp"/>
+                    android:paddingBottom="10dp"/>
 
                 <EditText
                     android:id="@+id/dateOfBirthET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="162.5dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/mobileET"
                     android:hint="Date Of Birth"
@@ -127,14 +125,13 @@
                     android:layout_marginLeft="25dp"
                     android:paddingLeft="25dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingRight="44dp" />
+                    android:paddingBottom="10dp"/>
 
                 <EditText
                     android:id="@+id/dateOfAnniversary"
-                    android:layout_width="wrap_content"
+                    android:layout_width="162.5dp"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@id/dateOfBirthET"
+                    android:layout_toRightOf="@id/dateOfBirthET"
                     android:layout_below="@id/mobileET"
                     android:hint="Date Of Anniversary"
                     android:inputType="text"
@@ -145,9 +142,9 @@
                     android:layout_marginLeft="25dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:paddingLeft="13dp"
-                    android:paddingRight="13dp"
-                    android:layout_marginRight="216dp"/>
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                     />
 
 
                 <TextView
@@ -163,10 +160,10 @@
 
                 <EditText
                     android:id="@+id/firstName2ET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="162.5dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/businessTV"
-                    android:hint="First Name"
+                    android:hint="Firm Name"
                     android:inputType="text"
                     android:textColorHint="#4C4C4C"
                     android:background="@drawable/shape3"
@@ -175,14 +172,13 @@
                     android:layout_marginLeft="25dp"
                     android:paddingLeft="25dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingRight="56dp" />
+                    android:paddingBottom="10dp"/>
 
                 <EditText
                     android:id="@+id/gstNumberET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="162.5dp"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@id/firstName2ET"
+                    android:layout_toRightOf="@id/firstName2ET"
                     android:layout_below="@id/businessTV"
                     android:hint="GST Number"
                     android:inputType="text"
@@ -194,12 +190,12 @@
                     android:paddingLeft="17dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
-                    android:paddingRight="60dp"
-                    android:layout_marginRight="5dp"/>
+                    android:layout_marginRight="5dp"
+                     />
 
                 <EditText
                     android:id="@+id/panNumberET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/firstName2ET"
                     android:hint="PAN Number"
@@ -211,12 +207,11 @@
                     android:layout_marginLeft="25dp"
                     android:paddingLeft="25dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingRight="236dp"/>
+                    android:paddingBottom="10dp"/>
 
                 <EditText
                     android:id="@+id/address1ET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/panNumberET"
                     android:hint="Addressline 1"
@@ -228,29 +223,44 @@
                     android:layout_marginLeft="25dp"
                     android:paddingLeft="25dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingRight="233dp"/>
+                    android:paddingBottom="10dp"/>
 
                 <EditText
                     android:id="@+id/address2ET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="162.5dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/address1ET"
                     android:hint="Addressline 2"
                     android:inputType="text"
                     android:textColorHint="#4C4C4C"
                     android:background="@drawable/shape3"
-                    android:textSize="16sp"
                     android:layout_marginTop="10dp"
+                    android:textSize="16sp"
                     android:layout_marginLeft="25dp"
                     android:paddingLeft="25dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingRight="233dp"/>
+                    android:paddingBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/pincodET"
+                    android:layout_width="162.5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/address2ET"
+                    android:layout_below="@id/address1ET"
+                    android:hint="Pincode"
+                    android:inputType="text"
+                    android:textColorHint="#4C4C4C"
+                    android:background="@drawable/shape3"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
 
                 <EditText
                     android:id="@+id/password2ET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="162.5dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/address2ET"
                     android:hint="Password"
@@ -262,14 +272,13 @@
                     android:layout_marginLeft="25dp"
                     android:paddingLeft="25dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingRight="66dp" />
+                    android:paddingBottom="10dp"/>
 
                 <EditText
                     android:id="@+id/confirmPasswordET"
-                    android:layout_width="wrap_content"
+                    android:layout_width="162.5dp"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@id/password2ET"
+                    android:layout_toRightOf="@id/password2ET"
                     android:layout_below="@id/address2ET"
                     android:hint="Confirm Password"
                     android:inputType="text"
@@ -280,15 +289,13 @@
                     android:layout_marginLeft="25dp"
                     android:paddingLeft="14dp"
                     android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:paddingRight="22dp"
-                    android:layout_marginRight="5dp"/>
+                    android:paddingBottom="10dp"/>
 
 
                 <Button
                     android:id="@+id/signUp2Btn"
                     style="@style/Widget.AppCompat.Button.Colored"
-                    android:layout_width="357dp"
+                    android:layout_width="365dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/password2ET"
                     android:layout_centerHorizontal="true"
@@ -312,7 +319,7 @@
 
 
                 <RelativeLayout
-                    android:layout_width="360dp"
+                    android:layout_width="365dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/or3TV"
                     android:layout_centerHorizontal="true"
@@ -333,7 +340,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/google2IB"
+                        android:layout_toRightOf="@id/google2IB"
                         android:paddingLeft="4dp"
                         android:paddingTop="4dp"
                         android:text="Continue with Google"

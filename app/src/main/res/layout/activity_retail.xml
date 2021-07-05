@@ -27,15 +27,15 @@
         android:iconifiedByDefault="false">
     </SearchView>
 
-    <ListView
-        android:layout_below="@id/searchView"
-        android:layout_width="240dp"
-        android:layout_marginTop="10dp"
-        android:layout_height="450dp"
-        android:layout_marginLeft="155dp"
-        android:background="#BED3C3">
+<!--    <ListView-->
+<!--        android:layout_below="@id/searchView"-->
+<!--        android:layout_width="240dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_height="450dp"-->
+<!--        android:layout_marginLeft="155dp"-->
+<!--        android:background="#BED3C3">-->
 
-    </ListView>
+<!--    </ListView>-->
 
 
         <HorizontalScrollView
@@ -43,6 +43,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:scrollbars="none"
             android:id="@+id/horizontalScrollView">
 
             <LinearLayout

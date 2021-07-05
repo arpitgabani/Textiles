@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE">
+
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center">-->
+
+            <LinearLayout
+
+                android:id="@+id/box3"
+                android:background="@drawable/shape6"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                tools:ignore="NotSibling"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/remainingPyTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:text="Personal Details"
+                            android:textColor="#2D2D2D"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/namePTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Name"
+                            android:textColor="#4D4D4D"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/emailPTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Email"
+                            android:textColor="#4D4D4D"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/mobileNumberPTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Mobile Number"
+                            android:textColor="#4D4D4D"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/dateOfBirthPTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Date Of Birth"
+                            android:textColor="#4D4D4D"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/dateOfAnniversaryPTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Date Of Anniversary"
+                            android:textColor="#4D4D4D"
+                            android:textSize="15dp" />
+
+
+                        <TextView
+                            android:id="@+id/businessDetailsPTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="35sp"
+                            android:text="Business Details"
+                            android:textColor="#2D2D2D"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/firmNamePTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Firm Name"
+                            android:textColor="#4D4D4D"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/gstNumberPTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="GST Number"
+                            android:textColor="#4D4D4D"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/panNumberPTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="PAN number"
+                            android:textColor="#4D4D4D"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/addressPTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Address"
+                            android:textColor="#4D4D4D"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/pincodePTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Pincode"
+                            android:textColor="#4D4D4D"
+                            android:textSize="15dp" />
+
+                        <Button
+                            android:id="@+id/editProfilBtn"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:paddingRight="50dp"
+                            android:paddingLeft="50dp"
+                            android:layout_below="@+id/accountTV"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/shape2"
+                            android:minWidth="120dp"
+                            android:text="Edit Profile"
+                            android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Do you want to change your Password?"
+                        android:textColor="#4D4D4D"
+                        android:textSize="17sp" />
+
+                    <Button
+                        android:id="@+id/cahngePasswordBtn"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/forgotpassTV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="#BED3C3"
+                        android:paddingLeft="90dp"
+                        android:paddingRight="90dp"
+                        android:minWidth="120dp"
+                        android:text="Change Password"
+                        android:textColor="#212E53"
+                        android:textStyle="bold" />
+
+
+
+                      </LinearLayout>
+
+                  </LinearLayout>
+
+              </RelativeLayout>
+
+            </ScrollView>
+
+
+        </RelativeLayout>

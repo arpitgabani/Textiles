@@ -1,81 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity"
-    android:fitsSystemWindows="true"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#EEEEEE">
 
-    <RelativeLayout
-        android:id="@+id/taskbarHome"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="#BED3C3">
 
-        <ImageButton
-            android:id="@+id/menuIB"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:background="#BED3C3"
-            android:src="@drawable/menu" />
-
-        <ImageView
-            android:id="@+id/homeLogoIV"
-            android:layout_width="90dp"
-            android:layout_height="40dp"
-            android:layout_centerInParent="true"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="110dp"
-            android:layout_toRightOf="@id/menuIB"
-            android:src="@drawable/logo" />
-
-        <ImageView
-            android:id="@+id/notificationIV"
-            android:layout_width="90dp"
-            android:layout_height="40dp"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="74dp"
-            android:layout_marginRight="90dp"
-            android:layout_toRightOf="@id/homeLogoIV"
-            android:src="@drawable/notifications" />
-
-
-    </RelativeLayout>
 
     <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="300dp"
-            android:layout_height="40sp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="25dp"
-            android:background="#FFFFFF"
-            android:iconifiedByDefault="false"
-            android:queryHint="Srach Here"
-            android:layout_marginTop="129dp"
-            ></SearchView>
+        android:id="@+id/searchView"
+        android:layout_width="300dp"
+        android:layout_height="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="#FFFFFF"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Here"
+        android:layout_marginTop="25dp"
+        ></SearchView>
 
-        <ScrollView
-            android:layout_below="@id/searchView"
+    <ScrollView
+        android:layout_below="@id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE">
+
+        <RelativeLayout
+            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".HomeActivity"
-            android:background="#EEEEEE">
+            android:layout_height="match_parent">
 
-            <RelativeLayout
-                android:layout_marginTop="25dp"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
 
                 <LinearLayout
                     android:layout_below="@id/searchView"
@@ -131,7 +90,7 @@
                                             android:layout_marginHorizontal="10dp"
                                             android:layout_weight="1"
                                             android:fontFamily="serif"
-                                            android:text="Name"
+                                            android:text="Order ID"
                                             android:textColor="#000" />
 
                                         <TextView
@@ -140,7 +99,7 @@
                                             android:layout_marginHorizontal="10dp"
                                             android:layout_weight="1"
                                             android:fontFamily="serif"
-                                            android:text="Name"
+                                            android:text="Catelog ID"
                                             android:textColor="#000" />
 
                                         <TextView
@@ -149,7 +108,7 @@
                                             android:layout_marginHorizontal="10dp"
                                             android:layout_weight="1"
                                             android:fontFamily="serif"
-                                            android:text="Name"
+                                            android:text="Design ID"
                                             android:textColor="#000" />
 
                                         <TextView
@@ -158,7 +117,7 @@
                                             android:layout_marginHorizontal="10dp"
                                             android:layout_weight="1"
                                             android:fontFamily="serif"
-                                            android:text="Name"
+                                            android:text="Units"
                                             android:textColor="#000" />
 
                                         <TextView
@@ -167,7 +126,7 @@
                                             android:layout_marginHorizontal="10dp"
                                             android:layout_weight="1"
                                             android:fontFamily="serif"
-                                            android:text="Name"
+                                            android:text="Paid Amount"
                                             android:textColor="#000" />
 
                                         <TextView
@@ -176,7 +135,7 @@
                                             android:layout_marginHorizontal="10dp"
                                             android:layout_weight="1"
                                             android:fontFamily="serif"
-                                            android:text="Name"
+                                            android:text="Remaining Amount"
                                             android:textColor="#000" />
 
                                         <TextView
@@ -185,7 +144,7 @@
                                             android:layout_marginHorizontal="10dp"
                                             android:layout_weight="1"
                                             android:fontFamily="serif"
-                                            android:text="Name"
+                                            android:text="Due Date"
                                             android:textColor="#000" />
 
 
@@ -198,6 +157,10 @@
                             </HorizontalScrollView>
 
                         </ScrollView>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -276,7 +239,7 @@
                                             android:layout_weight="1"
                                             android:layout_marginHorizontal="10dp"
                                             android:textColor="#000"
-                                            android:text="Name"/>
+                                            android:text="Order ID"/>
                                         <TextView
                                             android:fontFamily="serif"
                                             android:layout_height="wrap_content"
@@ -284,7 +247,7 @@
                                             android:layout_weight="1"
                                             android:layout_marginHorizontal="10dp"
                                             android:textColor="#000"
-                                            android:text="Name"/>
+                                            android:text="Catelog ID"/>
                                         <TextView
                                             android:fontFamily="serif"
                                             android:layout_height="wrap_content"
@@ -292,7 +255,7 @@
                                             android:layout_weight="1"
                                             android:layout_marginHorizontal="10dp"
                                             android:textColor="#000"
-                                            android:text="Name"/>
+                                            android:text="Design ID"/>
                                         <TextView
                                             android:fontFamily="serif"
                                             android:layout_height="wrap_content"
@@ -300,7 +263,7 @@
                                             android:layout_weight="1"
                                             android:layout_marginHorizontal="10dp"
                                             android:textColor="#000"
-                                            android:text="Name"/>
+                                            android:text="Units"/>
                                         <TextView
                                             android:fontFamily="serif"
                                             android:layout_height="wrap_content"
@@ -308,7 +271,7 @@
                                             android:layout_weight="1"
                                             android:layout_marginHorizontal="10dp"
                                             android:textColor="#000"
-                                            android:text="Name"/>
+                                            android:text="Total Amount"/>
                                         <TextView
                                             android:fontFamily="serif"
                                             android:layout_height="wrap_content"
@@ -316,15 +279,7 @@
                                             android:layout_weight="1"
                                             android:layout_marginHorizontal="10dp"
                                             android:textColor="#000"
-                                            android:text="Name"/>
-                                        <TextView
-                                            android:fontFamily="serif"
-                                            android:layout_height="wrap_content"
-                                            android:layout_width="match_parent"
-                                            android:layout_weight="1"
-                                            android:layout_marginHorizontal="10dp"
-                                            android:textColor="#000"
-                                            android:text="Name"/>
+                                            android:text="Status"/>
 
 
                                     </TableRow>
@@ -360,13 +315,11 @@
 
                 </LinearLayout>
 
-                </LinearLayout>
+            </LinearLayout>
 
-            </RelativeLayout>
+        </RelativeLayout>
 
-        </ScrollView>
-
-
+    </ScrollView>
 
 
-    </RelativeLayout>
+</RelativeLayout>
