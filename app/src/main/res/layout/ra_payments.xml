@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/ra_dateOrder"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Date Of Order"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/ra_orderId"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Order Id"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/ra_tAmount"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Total Amount" />
+
+    <TextView
+        android:id="@+id/ra_advancePay"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Advance Pay" />
+
+
+    <TextView
+        android:id="@+id/ra_rAmount"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Remaining Amount" />
+
+
+</LinearLayout>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:paddingTop="16dp">
+
+
+        <Button
+            android:id="@+id/Eclose"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="100dp"
+            android:layout_marginHorizontal="60dp"
+            android:layout_height="wrap_content"
+            android:text="CLOSE"
+            android:textColor="#212E53"
+            android:textFontWeight="700"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/Eapply"
+            android:layout_marginLeft="10dp"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:text="APPLY"
+            android:textColor="#212E53"
+            android:textFontWeight="700"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SignUpActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/scrollable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/EpersonalTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Details"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"/>
+
+
+            <TextView
+                android:id="@+id/EfirstNameTV"
+                android:layout_below="@id/EpersonalTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="First Name"
+                android:textColor="#4C4C4C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/EfirstNameET"
+                android:layout_width="162.5dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EfirstNameTV"
+                android:hint="abc"
+                android:inputType="text"
+                android:textColorHint="#2C2C2C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:id="@+id/ElastNameTV"
+                android:layout_below="@id/EpersonalTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/EfirstNameTV"
+                android:layout_marginLeft="114dp"
+                android:layout_marginTop="20dp"
+                android:text="Last Name"
+                android:textColor="#2C2C2C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/ElastNameET"
+                android:layout_width="162.5dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/EfirstNameET"
+                android:layout_below="@id/ElastNameTV"
+                android:hint="xyz"
+                android:paddingTop="10dp"
+                android:inputType="text"
+                android:textColorHint="#4C4C4C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="60dp"
+                android:layout_toRightOf="@id/EfirstNameET" />
+
+
+
+            <TextView
+                android:id="@+id/EemailTV"
+                android:layout_below="@id/EfirstNameET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:text="Email"
+                android:textColor="#4C4C4C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/EemailET"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EemailTV"
+                android:hint="abc12@gmail.com"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#4C4C4C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/EmobileTV"
+                android:layout_below="@id/EemailET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:text="Mobile Number"
+                android:textColor="#4C4C4C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/EmobileET"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EmobileTV"
+                android:hint="9524124120"
+                android:inputType="phone"
+                android:textColorHint="#4C4C4C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/EdobTV"
+                android:layout_below="@id/EmobileET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="Date Of Birth"
+                android:textColor="#4C4C4C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/EdobET"
+                android:layout_width="162.5dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EdobTV"
+                android:hint="01/06/2002"
+                android:inputType="text"
+                android:textColorHint="#2C2C2C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:id="@+id/EdoaTV"
+                android:layout_below="@id/EmobileET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/EdobTV"
+                android:layout_marginLeft="114dp"
+                android:layout_marginTop="20dp"
+                android:text="Date Of Anniversary"
+                android:textColor="#2C2C2C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/EdoaET"
+                android:layout_width="162.5dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/EdobET"
+                android:layout_below="@id/EdoaTV"
+                android:hint="20/12/2022"
+                android:paddingTop="10dp"
+                android:inputType="text"
+                android:textColorHint="#4C4C4C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="60dp"
+                android:layout_toRightOf="@id/EfirstNameET" />
+
+            <TextView
+                android:id="@+id/EbussinessTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bussiness Details"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@id/EdobET"/>
+
+            <TextView
+                android:id="@+id/EfirmNameTV"
+                android:layout_below="@id/EbussinessTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:text="Firm Name"
+                android:textColor="#4C4C4C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/EfirmNameET"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EfirmNameTV"
+                android:hint="Fab India"
+                android:inputType="text"
+                android:textColorHint="#4C4C4C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/EgstTV"
+                android:layout_below="@id/EfirmNameET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:text="GST Number"
+                android:textColor="#4C4C4C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/EgstET"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EgstTV"
+                android:hint="24AAAA0000A3Z5"
+                android:inputType="text"
+                android:textColorHint="#4C4C4C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/EpanTV"
+                android:layout_below="@id/EgstET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:text="PAN Number"
+                android:textColor="#4C4C4C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/EpanET"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EpanTV"
+                android:hint="AAAAA0000A"
+                android:inputType="text"
+                android:textColorHint="#4C4C4C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/Eadd1TV"
+                android:layout_below="@id/EpanET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:text="Address Line 1"
+                android:textColor="#4C4C4C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/Eadd1ET"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Eadd1TV"
+                android:hint="Surat"
+                android:inputType="text"
+                android:textColorHint="#4C4C4C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/Eadd2TV"
+                android:layout_below="@id/Eadd1ET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="Address Line 2"
+                android:textColor="#4C4C4C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/Eadd2ET"
+                android:layout_width="162.5dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Eadd2TV"
+                android:hint="Gujrat"
+                android:inputType="text"
+                android:textColorHint="#2C2C2C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:id="@+id/EpincodeTV"
+                android:layout_below="@id/Eadd1ET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/EdobTV"
+                android:layout_marginLeft="114dp"
+                android:layout_marginTop="20dp"
+                android:text="Pincode"
+                android:textColor="#2C2C2C"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/EpincodeET"
+                android:layout_width="162.5dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EpincodeTV"
+                android:hint="395004"
+                android:paddingTop="10dp"
+                android:inputType="text"
+                android:textColorHint="#4C4C4C"
+                android:background="@drawable/shape3"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="25dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="60dp"
+                android:layout_toRightOf="@id/Eadd2ET" />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

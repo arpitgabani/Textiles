@@ -66,11 +66,11 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
-//        if (SharedPrefManager.getInstance(getApplicationContext()).isLoggedIn()){
-//            finish();
-//            startActivity(new Intent(getApplicationContext(),HomeActivity.class));
-//            return;
-//        }
+        if (SharedPrefManager.getInstance(getApplicationContext()).isLoggedIn()){
+            finish();
+            startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+            return;
+        }
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("please wait...");

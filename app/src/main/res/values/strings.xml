@@ -3,7 +3,7 @@
 
     <string name="navigation_drawer_open">Open Textile App</string>
     <string name="navigation_drawer_close">Close Textile App</string>
-    
+
     <string-array name="order_processing">
         <item>Newest First</item>
         <item>Oldest First</item>
