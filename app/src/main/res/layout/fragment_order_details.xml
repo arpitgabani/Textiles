@@ -63,73 +63,155 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
-                        **************************************
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="25dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Date Of Order"
-                            android:textColor="#4D4D4D"
-                            android:textSize="15dp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Order Nunber"
-                            android:textColor="#4D4D4D"
-                            android:textSize="15dp" />
-                        <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Delivery Number :  "
+                                android:textColor="#4D4D4D"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ABC"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Total Gray Lot"
-                            android:textColor="#4D4D4D"
-                            android:textSize="15dp" />
-                        <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_marginTop="7dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date Of Delivery :  "
+                                android:textColor="#4D4D4D"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ABC"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Matrial Type"
-                            android:textColor="#4D4D4D"
-                            android:textSize="15dp" />
-                        <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_marginTop="7dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Gray Lot :  "
+                                android:textColor="#4D4D4D"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ABC"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Category Number"
-                            android:textColor="#4D4D4D"
-                            android:textSize="15dp" />
-                        <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_marginTop="7dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Category Number :  "
+                                android:textColor="#4D4D4D"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ABC"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Design Number"
-                            android:textColor="#4D4D4D"
-                            android:textSize="15dp" />
-                        <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_marginTop="7dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Design Number :  "
+                                android:textColor="#4D4D4D"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ABC"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Amount Per Lot"
-                            android:textColor="#4D4D4D"
-                            android:textSize="15dp" />
-                        <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_marginTop="7dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Vehical Number :  "
+                                android:textColor="#4D4D4D"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ABC"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:orientation="horizontal"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Total Amount"
-                            android:textColor="#4D4D4D"
-                            android:textSize="15dp"
-                            android:paddingBottom="15dp"/>
+                            android:layout_marginTop="7dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Driver Number :  "
+                                android:textColor="#4D4D4D"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ABC"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Driver Mobile Number :  "
+                                android:textColor="#4D4D4D"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ABC"/>
+                        </LinearLayout>
 
 
 

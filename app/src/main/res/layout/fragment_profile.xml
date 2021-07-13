@@ -61,7 +61,7 @@
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Name : "
+                            android:text="Name  :  "
                             android:textColor="#4D4D4D"
                             android:textSize="15dp" />
                         <TextView
@@ -80,7 +80,7 @@
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Email : "
+                            android:text="Email  :  "
                             android:textColor="#4D4D4D"
                             android:textSize="15dp" />
                     <TextView
@@ -99,7 +99,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mobile Number : "
+                            android:text="Mobile Number  :  "
                             android:textColor="#4D4D4D"
                             android:textSize="15dp" />
                 <TextView
@@ -118,7 +118,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Date Of Birth : "
+                            android:text="Date Of Birth  :  "
                             android:textColor="#4D4D4D"
                             android:textSize="15dp" />
             <TextView
@@ -137,7 +137,7 @@
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Date Of Anniversary : "
+                            android:text="Date Of Anniversary  :  "
                             android:textColor="#4D4D4D"
                             android:textSize="15dp" />
             <TextView
@@ -169,7 +169,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Firm Name : "
+                            android:text="Firm Name  :  "
                             android:textColor="#4D4D4D"
                             android:textSize="15dp" />
                         <TextView
@@ -189,7 +189,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="GST Number : "
+                            android:text="GST Number  :  "
                             android:textColor="#4D4D4D"
                             android:textSize="15dp" />
                         <TextView
@@ -209,7 +209,7 @@
 
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="PAN number : "
+                            android:text="PAN number  :  "
                             android:textColor="#4D4D4D"
                             android:textSize="15dp" />
                         <TextView
@@ -228,7 +228,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Address : "
+                            android:text="Address  :  "
                             android:textColor="#4D4D4D"
                             android:textSize="15dp" />
                         <TextView
@@ -247,7 +247,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Pincode : "
+                            android:text="Pincode  :  "
                             android:textColor="#4D4D4D"
                             android:textSize="15dp" />
                         <TextView

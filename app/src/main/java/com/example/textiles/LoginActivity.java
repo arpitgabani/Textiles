@@ -121,6 +121,7 @@ public class LoginActivity extends AppCompatActivity {
                 try {
                     JSONObject jsonObject = new JSONObject(response);
                     if(!jsonObject.getBoolean("error")){
+                        Toast.makeText(LoginActivity.this,"Clsoo Textile is working Succesfully",Toast.LENGTH_LONG).show();
                         SharedPrefManager.getInstance(LoginActivity.this).userLogin(email);
                         Toast.makeText(LoginActivity.this,jsonObject.getString("message"),Toast.LENGTH_LONG).show();
                         startActivity(new Intent(LoginActivity.this,HomeActivity.class));
@@ -129,6 +130,7 @@ public class LoginActivity extends AppCompatActivity {
                     }else{
                         Toast.makeText(LoginActivity.this,jsonObject.getString("message"),Toast.LENGTH_LONG).show();
                     }
+                    Toast.makeText(LoginActivity.this,"Clsoo Textile is working Succesfully",Toast.LENGTH_LONG).show();
 
 
 
